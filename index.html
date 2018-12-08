@@ -19,7 +19,7 @@
 <div class="row">
   <div class="col-sm-8">
   	<h2 class="display-4">Using network science and natural language processing to learn even more about Friends </h2>
-  	<p class="lead"> So.. They stopped making more episodes of Friends back in 2004 and even though it's still possible to watch the series online and for each rewatch find new details on the show, it's like it's never enough. This project is an attempt to find out more details about the show, by looking at it from another angle. Using network analysis and text analysis I'm going to see if a can find out something new.  
+  	<p class="lead"> So.. They stopped making more episodes of Friends back in 2004 and even though it's still possible to watch the series online and for each rewatch find new details on the show, it's like it's never enough. This project is an attempt to find out more details about the show, by looking at it from another angle. Using network analysis and text analysis I'm going to see if I can find out something new.  
   	The project is based on data from three different sources; for the network analysis I used character descriptions from <a href="https://friends.fandom.com/wiki/Category:Friends_Characters">the Friends wiki fan page</a>, there is an analysis based on the storylines for all episodes and also there is textual analysis based on the character descriptions as well as the transcripts for all episodes.<br> <br>
   	<b> Want to know more? Click <a href="">here</a> for behind the scenes stuff</b>
   	
@@ -30,13 +30,34 @@
 
 <!-- Første version af netværket -->
 <h1 class="display-4 h1">THE ONE WITH THE NETWORK ANALYSIS </h1> 
-<p class="lead"> </p>
+<div class="row">
+	<div class="col">
+<p class="lead">  
+	To see what the relations between the characters look like, I've made a directed network between them. The network is based on the character desciptions - for each description and edge is added between the person and all people that are referenced in that description. This results in the networks below. 
+ </p>
+</div>
+</div>
 <div class="row"> 
 <div class="col">
 <img src="images/network.png" width=45%>
 <img src="images/network2.png" width=45%>
 </div>
 </div>
+<div class="row">
+	<div class="col">
+<p class="lead">  
+	The two versions of the network are based on the same data. There a some minor differences in the layout and then the network to the right only has labels on the main characters. This is just, so the structure of the network is more obvious than then one to the left. But I think it's quite funny to see the relations to the different characters that has appeared in the series over time. <br> <br>
+	As you might have noticed the node sizes are different. This is because they are proportional to their degree. Degree is the number of edges adjacent to a node. So it might not surprise you that the main characters have the biggest nodes.
+
+ </p>
+</div>
+</div>
+
+
+
+
+
+
 <p class="lead"> </p>
 
 <!-- Degree distribution -->
@@ -44,7 +65,7 @@
 <div class="row">
   <div class="col-sm-4"><img src="images/degreedist.png" width=100%></div>
   <div class="col-sm-8">
-  	<p class="lead"> </p>
+  	<p class="lead"> The plot on the left shows the degree distribution for the network. As it displays a lot of the nodes have degress of 50 or less, while 6 nodes have more than 150. Without investigating further it's pretty safe to say that these 6 nodes are our 6 main characters. When the distribution looks like this, it's a reflection of a network with hubs in it - meaning few nodes are "center" for other nodes. </p>
   </div>
 </div>
 
