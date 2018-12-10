@@ -72,34 +72,35 @@
 <!-- Centrality measures -->
 <h1 class="display-4 h1">Which character is the most popular? </h1> 
 <div class="row">
-	<p class="lead">So.. We've seen that our network contains hubs and can see from the network that our dear Friends are a popular group of people.. But who is actually the most popular one? There's a lot of different ways to investigate this. One of them is to go deeper into the analysis of the network and look at the centrality measures.</p>
+	<p class="lead">So.. We've seen that our network contains hubs and can see from the network that our dear Friends are a popular group of people.. But who is actually the most popular one? There's a lot of different ways to investigate this. One of them is to go deeper into the analysis of the network and look at some centrality measures.</p>
 
 <div class="card">
   <img class="card-img-top" src="images/indegree.png" style="width:100%;">
 	  <div class="card-body">
 	    <h5 class="card-title">In-degree centrality</h5>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <p class="card-text">The in-degree centrality is a measure of how many people "know" a character. So in regards of the character pages, it's determined by the references to other characters on the character pages. As the plot above displays, Ross is the one that is referenced the most. <br> <br> <br> </p>
 	  </div>
 </div>
 <div class="card">
   <img class="card-img-top" src="images/outdegree.png" style="width:100%;">
   <div class="card-body">
     <h5 class="card-title">Out-degree centrality</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">The out-degree is the opposite of the in-degree centrality. So in this measure we look at how many characters a certain charcterpage has references to. As you can see the one with the highest out-degree is Rachel and she's followed by Ross.<br> <br> <br> </p>
   </div>
 </div>
 <div class="card">
   <img class="card-img-top" src="images/betweenness.png" style="width:100%;">
   <div class="card-body">
     <h5 class="card-title">Betweenness centrality</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">The betweenness centrality is based on shortest paths. A <i>shortest path</i> is the number of edges that needs to be traversed in order to get from node A to node B. For all nodes pairs in a network, there exists a shortest path. The betweeness centrality is then a measure of how many times a node is a part of a shortest path. 
+    </p>
   </div>
 </div>
 <div class="card">
   <img class="card-img-top" src="images/eigen.png" style="width:100%;">
   <div class="card-body">
     <h5 class="card-title">Eigenvector centrality</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">The main idea with eigenvector centrality is that nodes that are connected with "high scoring" nodes are more important than nodes that are node connected to such nodes. So a node with a high score is more powerful in a network, than a node with a lower score. You can see on the plot that the charcters have about the same score, but Monicas is just a bit higher.</p>
   </div>
 </div>
 </div>
@@ -111,47 +112,59 @@
   <div class="col-sm-4"><img src="images/tanningsalonguy.jpg" width=70%></div>
   <div class="col-sm-8">
   	<h2 class="display-4 h1">The tanning salon guy?</h1> 
-  	<p class="lead"> </p>
+  	<p class="lead"> We met the tanning salon guy in "The One With Ross' Tan". In the episode Ross goes to get a fake tan but misunderstands the directions of the tanning salon guy resulting in him getting sprayed two times on the front. When he comes back to get it fixed, it's goes wrong again..</p>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-4"><img src="images/hombre.jpg" width=70%></div>
   <div class="col-sm-8">
   	<h2 class="display-4 h1">What about Todd, the hombre man?</h1> 
-  	<p class="lead"> </p>
+  	<p class="lead"> Todd the Hombre man is a guy thaty Joey works with as a cologne spritzer. Joey is jealous of him, because he is doing a better job and also the girl that he likes is into Todd.</p>
   </div>
 </div>
+<div class="row">
+	<div class="col">
+<p class="lead">The thing that these two guys have in common is that their degree is 1. There's acutally quite a lot of people in the network with a degree of 1. This is a result of the fact that they only know one person in the network - and probably most of the characters with this property only appear in one episode. So the tanning salon guy only knows Ross and Todd, the hombre man only knows Joey.</p>
+</div>
+</div>
+
+
 
 <!-- STORYLINES-->
 <h1 class="display-4 h1">THE ONE WITH THE STORYLINES</h1> 
 <div class="row">
+	<div class="col">
+<p class="lead">In the following section the tv series has been analysed in regards of storylines. For this a dataset which contain an overview of which characters appear in storylines together and alone for each episode.</p>
+</div>
+</div>
+<div class="row">
   <div class="col-sm-8">
-  	<h2 class="display-4">Using network science and natural language processing to learn even more about Friends </h2>
-  	<p class="lead"> </p>
+  	<h2 class="display-4">Who's a loner?</h2>
+  	<p class="lead"> The first thing that has been analysed is a count for each character on how many individual storylines they have. As you can see Phoebe is a clear winner of this one! But is should be noted that a individual storyline can include people that are not a part of the main character group. So based on the fact that Phoebe has several boyfriends that are not one of the main characters, this result is probably not so weird.</p>
   </div>
   <div class="col-sm-4"><img src="images/indi.png" width=100%></div>
 </div>
 
 <div class="row">
   <div class="col-sm-8">
-  	<h2 class="display-4">Using network science and natural language processing to learn even more about Friends </h2>
-  	<p class="lead"> </p>
+  	<h2 class="display-4">Who's the best friends of Friends?</h2>
+  	<p class="lead">In my opinion this is the most important question of all and now we finally have an answer! To figure this out the amount of times each group of people have been in storylines have been counted. The result shows that Rachel and Ross have most storylines together.. After that we have Monica and Chandler. But if we ignore the boring couples of the show, we can see that the best friends are actually Chandler and Joey! </p>
   </div>
   <div class="col-sm-4"><img src="images/grouped.png" width=100%></div>
 </div>
 
 <div class="row">
   <div class="col-sm-8">
-  	<h2 class="display-4">Using network science and natural language processing to learn even more about Friends </h2>
-  	<p class="lead"> </p>
+  	<h2 class="display-4">Who does the screenwriters like the best? (Part one)</h2>
+  	<p class="lead"> Antoher way of finding the most popular character is to find out which characters have most storylines in total. As you can see the screen time (based on amount of storylines) is pretty evenly distributed, but Rachel does have just a bit more storylines than the others, while Phoebe has just a bit less. </p>
   </div>
   <div class="col-sm-4"><img src="images/app.png" width=100%></div>
 </div>
 
 <div class="row">
-  <div class="col-sm-8">
-  	<h2 class="display-4">Using network science and natural language processing to learn even more about Friends </h2>
-  	<p class="lead"> </p>
+  <div class="col-sm-8"> 
+  	<h2 class="display-4">Who does the screenwriters like the best? (Part two) </h2>
+  	<p class="lead"> Just to see if the result above holds, the transcripts of the episodes have been analysed as well. For each character is has been counted how many times their name is mentioned. This both includes the amount of times they say something themselves and the anount of times other charcters mention them. This yields in a pretty different result than the one above. Ross is clearly mentioned most times throughout the episodes.</p>
   </div>
   <div class="col-sm-4"><img src="images/total.png" width=100%></div>
 </div>
