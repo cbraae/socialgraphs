@@ -301,26 +301,96 @@
 <h1 class="display-4 h1">Which episodes are the most positive ones?</h1> 
 <p class="lead">In the same way as sentiment is calculated from the character descriptions sentiment can also be calculated for the episodes.</p>
 <img src="images/sentimentovertime.png" width=100% height="100%">
-<p class="lead"> So in the plot above you can see the calculated sentiment for each episode in the series. All numbers vary between 5.5 and 6 - therefore the y-scale is corrected according to this - so it's easier to see the differences in sentiment. To zoom in even more on the sentiments, the top 10 most positive and top 10 least positive sentiments have been found.
+<p class="lead"> So in the plot above you can see the calculated sentiment for each episode in the series. All numbers vary between 5.5 and 6 - therefore the y-scale is corrected according to this - so it's easier to see the differences in sentiment. To zoom in even more on the sentiments, the top 3 most positive and top 3 least positive sentiments have been found.
 </div>
 </div>
 
-<!-- wordclouds-->
 <div class="row">
-<div class="card">
-  <img class="card-img-top" src="images/wordcloud1.png" style="width:100%;">
-	  <div class="card-body">
-	    <h5 class="card-title">Wordcloud for season 3 episode 24</h5>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	  </div>
+<div class="col-xs-6"><table class="table">
+    <thead>
+      <tr>
+      	<th>Number</th>
+        <th>Episode</th>
+        <th>Sentiment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>The One with Chandler's Dad</td>
+        <td>5.801825</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>The One Where They All Turn Thirty</td>
+        <td>5.797115</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>The One With George Stephanopoulos</td>
+        <td>5.793958</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<div class="card">
-  <img class="card-img-top" src="images/wordcloud2.png" style="width:100%;">
-	  <div class="card-body">
-	    <h5 class="card-title">Wordcloud for all episodes</h5>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	  </div>
+<div class="col-xs-6">
+
+  	<table class="table">
+    <thead>
+      <tr>
+      	<th>Number</th>
+        <th>Episode</th>
+        <th>Sentiment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>The One Where Joey Loses His Insurance </td>
+        <td>5.444976</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>The One With the Jellyfish</td>
+        <td>5.496129</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>The One With the Stripper</td>
+        <td>5.504569</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="row">
+  	<div class ="col">
+  		<p class="lead"> The two tables above show the top 3 most positive episodes (left) and the top three least positive ones (right). Friends are generally not a negative tv-show. It's a comedy series meaning that even when bad stuff happens to the characters, the entire episode is not going to be negative. As you might notice, there is not a big difference in sentiment between the episodes. But just based on the titles one could suspect that "The One Where Joey Loses His Insurance" is less positive than "The One Where They All Turn Thirty" for instance. "The One With Chandlers Dad" is quite surprising to be scoring so high in my opinion. </p>
+  	</div>
+  	</div>	
+
+
+<!-- wordclouds-->
+
+<h1 class="display-4 h1">What are the episodes about?</h2>
+	<p class="lead"> To take a even closer look at the episodes, wordclouds have been generated. These are based on the td-if score for each word in the episode. 
+<div class="row">
+  <div class="col-sm-4"><img src="images/wordcloud1.png" width=100%></div>
+  <div class="col-sm-8">
+  	<h1 class="display-3">The One with Chandler's Dad</h2>
+
+  	<p class="lead"> There are two main stories in "The One With Chandlers Dad", first one is of course about Chandlers dad. Chandler and Monica decides to go visit Chandlers dad, and invite him/her to their wedding. This does not seem to have a high impact on the wordcloud though.. But the name Garibaldi does belong to the piano man playing for Chandlers dad. Besides that the episode is about Rachel finding out why she's never allowed to borrow Monica's porsche, forcing Ross to let her drive and getting a ticket. This is reflected pretty obviously in the wordcloud.</p>
+  </div>
 </div>
+  <div class="col-sm-4"><img src="images/wordcloud2.png" width=100%></div>
+  <div class="col-sm-8">
+  	<p class="lead"> 
+  		<h1 class="display-3">The One Where Joey Loses His Insurance</h2>
+  		<p class="lead">In "The One Where Joey Loses His Insurance" the main story is that Joey loses his insurance and right after that he gets a hernia causing him a great deal of pain. This is also the episode where Ross start a new job as a teacher and fakes a british accent because he's nervous</p>
+  </div>
+</div>
+
+
 
 
 </body>
