@@ -1,0 +1,1 @@
+{"sections":[{"title":"Ms. McKenna","level":1,"content":[{"type":"paragraph","text":"Elaine McKenna is the boss of Chandler's boss at his data processing job. She heads the meeting during which Chandler falls asleep and accidentally volunteers to run the office in Tulsa."},{"type":"paragraph","text":"She is mentioned to have a son and a daughter."}],"images":[]}]}

@@ -1,0 +1,1 @@
+{"sections":[{"title":"Maureen","level":1,"content":[{"type":"paragraph","text":"Maureen is Monica and Ross' cousin, who appears briefly in The One With Monica And Chandler's Wedding, Part 1. She is introduced to Chandler by Monica in the rehearsal dinner. She wears a blue dress."},{"type":"paragraph","text":"The actress who portrays Maureen is uncredited."}],"images":[]}]}

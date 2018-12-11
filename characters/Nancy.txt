@@ -1,0 +1,1 @@
+{"sections":[{"title":"Nancy","level":1,"content":[{"type":"paragraph","text":"Nancy is Rachel's colleague at Ralph Lauren. She is shown to be a smoker and close with her boss, Kim."}],"images":[]}]}

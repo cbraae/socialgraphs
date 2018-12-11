@@ -1,0 +1,1 @@
+{"sections":[{"title":"Mr. Burgin","level":1,"content":[{"type":"paragraph","text":"Mr. Burgin is the father of Joshua Burgin."}],"images":[]},{"title":"Trivia","level":2,"content":[{"type":"list","elements":[{"text":"He is portrayed by John Bennett Perry, who is the real life father of Matthew Perry,\u00a0who plays Chandler Bing.","elements":[]}]}],"images":[]}]}

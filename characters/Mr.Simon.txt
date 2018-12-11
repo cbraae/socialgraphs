@@ -1,0 +1,1 @@
+{"sections":[{"title":"Mr. Simon","level":1,"content":[{"type":"paragraph","text":"Mr. Simon is the client Phoebe's boss brings in when she's caught kissing Rick. He's played by E.J. Callaghan."}],"images":[]}]}

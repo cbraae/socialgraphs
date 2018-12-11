@@ -1,0 +1,1 @@
+{"sections":[{"title":"Deceased Characters","level":1,"content":[{"type":"paragraph","text":"These are characters that died before or during Friends."}],"images":[]}]}

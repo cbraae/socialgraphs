@@ -1,0 +1,1 @@
+{"sections":[{"title":"Walter","level":1,"content":[{"type":"paragraph","text":"One of Chandler's co-workers. He briefly appears in The One Where Emma Cries."}],"images":[]}]}
