@@ -11,10 +11,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
  <div class="jumbotron">
-  <h1 class="display-4">THE ONE WHERE WE ANALYSE <img src="images/kopi.png" height="50px"></h1> <br> 
+<h1 class="display-4">THE ONE WHERE WE ANALYSE <img src="images/kopi.png" height="50px"></h1> <br> 
   <a class="headerlinks"><b><a href='#Motivation' style="color:#e82c3b; margin-left:90px; margin-right:10px">The One With The Network Analysis      </a> <a href='#Story' style="color:#24cfd8; margin-right:10px">The One With The Storylines  </a> <a href='#Text' style="color:#f4bc42; margin-right:10px">The One With The Text Analysis  </a> <a href='#Data' style="color:#e82c3b; margin-right:10px">The One With The Data Sets  </a> <a style="color:#24cfd8;" href="https://nbviewer.jupyter.org/github/cbraae/socialgraphs/blob/master/project.ipynb">The One With The Notebook</a> </b>
 </div>
 
+<hr class="hrclass">
 
 <!--INTRODUKTION --> 
 <div class="row">
@@ -29,6 +30,8 @@
   </div>
   <div class="col-sm-4"><img src="images/friends.jpg" width=100%></div>
 </div>
+
+<hr class="hrclass">
 
 <!-- Første version af netværket -->
 <h1 class="display-4 h1">THE ONE WITH THE NETWORK ANALYSIS </h1> <a name="Motivation"></a>
@@ -55,6 +58,7 @@
 </div>
 </div>
 
+<div style="margin:60px"> </div>
 
 
 
@@ -63,38 +67,43 @@
 <p class="lead"> </p>
 
 <!-- Degree distribution -->
-<h1 class="display-4 h1">Degree Distribution</h2>
+
 <div class="row">
+
   <div class="col-sm-4"><img src="images/degreedist.png" width=100%></div>
   <div class="col-sm-8">
+    <h1 class="display-4 h1">Degree Distribution</h2> <br>
   	<p class="lead"> The plot on the left shows the degree distribution for the network. As it displays a lot of the nodes have degrees of 50 or less, while 6 nodes have more than 150. Without investigating further it's pretty safe to say that these 6 nodes are our 6 main characters. When the distribution looks like this, it's a reflection of a network with hubs in it - meaning few nodes are "center" for other nodes. </p>
   </div>
 </div>
 
+<div style="margin:60px"> </div>
+
 <!-- Centrality measures -->
 <h1 class="display-4 h1">Which character is the most popular? </h1> 
 <div class="row">
+  <div class="col">
 	<p class="lead">So.. We've seen that our network contains hubs and can see from the network that our dear Friends are a popular group of people.. But who is actually the most popular one? There's a lot of different ways to investigate this. One of them is to go deeper into the analysis of the network and look at some centrality measures.</p>
-
+</div>
 <div class="card">
-  <img class="card-img-top" src="images/indegree.png" style="width:100%;">
+  <img class="card-img-top" src="images/indegree.png" style="width:100%;  margin-top:0px;">
 	  <div class="card-body">
 	    <h5 class="card-title">In-degree centrality</h5>
 	    <p class="card-text">The in-degree centrality is a measure of how many people "know" a character. So in regards of the character pages, it's determined by the references to other characters on the character pages. As the plot above displays, Ross is the one that is referenced the most. <br> <br> <br> </p>
 	  </div>
 </div>
 <div class="card">
-  <img class="card-img-top" src="images/outdegree.png" style="width:100%;">
+  <img class="card-img-top" src="images/outdegree.png" style="width:100%; margin-top:-3px;">
   <div class="card-body">
     <h5 class="card-title">Out-degree centrality</h5>
-    <p class="card-text">The out-degree is the opposite of the in-degree centrality. So in this measure we look at how many characters a certain charcterpage has references to. As you can see the one with the highest out-degree is Rachel and she's followed by Ross.<br> <br> <br> </p>
+    <p class="card-text">The out-degree is the opposite of the in-degree centrality. So in this measure we look at how many characters a certain charcterpage has references to. As you can see the one with the highest out-degree is Rachel and she's followed by Ross.<br> <br> <br> <br></p>
   </div>
 </div>
 <div class="card">
-  <img class="card-img-top" src="images/betweenness.png" style="width:100%;">
+  <img class="card-img-top" src="images/betweenness.png" style="width:100%;  margin-top:0px;">
   <div class="card-body">
     <h5 class="card-title">Betweenness centrality</h5>
-    <p class="card-text">The betweenness centrality is based on shortest paths. A <i>shortest path</i> is the number of edges that needs to be traversed in order to get from node A to node B. For all nodes pairs in a network, there exists a shortest path. The betweeness centrality is then a measure of how many times a node is a part of a shortest path. 
+    <p class="card-text">The betweenness centrality is based on shortest paths. A <i>shortest path</i> is the number of edges that needs to be traversed in order to get from node A to node B. For all nodes pairs in a network, there exists a shortest path. The betweeness centrality is then a measure of how many times a node is a part of a shortest path. <br> <br>
     </p>
   </div>
 </div>
@@ -106,6 +115,8 @@
   </div>
 </div>
 </div>
+
+<div style="margin:60px"> </div>
 
 <!-- Do you remember -->
 <h1 class="display-4 h1">Do you remember...</h1> 
@@ -126,14 +137,30 @@
 </div>
 <div class="row">
 	<div class="col">
-<p class="lead">The thing that these two guys have in common is that their degree is 1. There's acutally quite a lot of people in the network with a degree of 1. This is a result of the fact that they only know one person in the network - and probably most of the characters with this property only appear in one episode. So the tanning salon guy only knows Ross and Todd, the hombre man only knows Joey.</p>
+<p class="lead"><br>The thing that these two guys have in common is that their degree is 1. There's acutally quite a lot of people in the network with a degree of 1. This is a result of the fact that they only know one person in the network - and probably most of the characters with this property only appear in one episode. So the tanning salon guy only knows Ross and Todd, the hombre man only knows Joey.</p>
 </div>
 </div>
+
+<div style="margin:60px"> </div>
+
 <!-- Communities -->
 <h1 class="display-4 h1">Communities in Friends</h1> 
 <div class="row">
+  <div class="col">
+      <p class="lead"> 
+    Using the Louvain algorithm communities can be detected in a network. Below you can see a graph visulisation of this, where each color represent a different community. What is especially interesting is that all the main characters are in their own community.
+  </p>
+  </div>
+</div>
+<div class="row">
+
 <div class="col">
-  <img src="images/communities.png" width=60%>
+
+
+  <img src="images/communities.png" width=60% class="community">
+   <p class="lead"> 
+    In the tables below you can see all the communities that was found by the algorithm. Some of them are more obvious than others and overall they seem to be really good. Looking at community #5 which is basically "Phoebes community" all characters in the community are either family of Phoebe or a boyfriend of Phoebe's. Pretty cool, right?
+  </p>
 
 </div>
 </div>
@@ -625,8 +652,8 @@
 </div>
 </div>
 
-
-
+<div style="margin:60px"> </div>
+<hr class="hrclass">
 
 <!-- STORYLINES-->
 <h1 class="display-4 h1">THE ONE WITH THE STORYLINES</h1> <a name="Story"></a>
@@ -678,7 +705,7 @@
 </div>
 </div>
 
-
+<hr class="hrclass">
 <!-- The one with the text analysis--> 
 <h1 class="display-4 h1">THE ONE WITH THE TEXT ANALYSIS </h1> <a name="Text"></a>
 <div class="row">
@@ -887,11 +914,13 @@
   		<p class="lead">In "The One Where Joey Loses His Insurance" the main story is that Joey loses his insurance and right after that he gets a hernia causing him a great deal of pain. This is also the episode where Ross start a new job as a teacher and fakes a british accent because he's nervous</p>
   </div>
 </div>
+<hr class="hrclass">
 
 <!-- DATASET DOWNLOAD -->
 <div class="row">
 	<div class="col" style="text-align: center">
 		<h1> THE ONE WITH THE DATA SETS</h1> <a name="Data"></a>
+    <div style="margin:60px"> </div>
  	<h4 class="display-4"> <a href="https://github.com/cbraae/socialgraphs/tree/master/characters">Get character descriptions </a></h2>
 	<h4 class="display-4"><a href="https://github.com/cbraae/socialgraphs/tree/master/transcripts">Get episode transcripts</a></h2>
 	<h4 class="display-4"><a href=" https://github.com/apalbright/Friends/tree/master/raw_data">Get storylines data</a> </h2>

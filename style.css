@@ -13,11 +13,17 @@ h1 {
     text-align: center !important 
 }
 
+hrclass {
+     margin:100px !important;
+
+}
+
 .card {
 	display:inline-block;
     margin:10px;
 	vertical-align: center !important;
     width: 22%;
+
 }
 
 .container {
@@ -28,10 +34,20 @@ h1 {
     margin-left: 15px !important;
     margin-right: 15px !important;
        
-}
+} 
 
 .headerlinks {
     font-size: 8px !important;
+
+}
+
+
+.jumbotron {
+  background-color:white !important;
+}
+
+.community {
+    margin:0 auto;
 
 }
 
