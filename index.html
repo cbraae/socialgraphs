@@ -38,7 +38,7 @@
 <div class="row">
 	<div class="col">
 <p class="lead">  
-	To see what the relations between the characters look like, I've made a directed network between them. The network is based on the character desciptions - for each description and edge is added between the person and all people that are referenced in that description. This results in the networks below. 
+	To see what the relations between the characters look like, I've made a directed network between them. The network is based on the character desciptions - for each description an edge is added between the person and all people that are referenced in that description. This results in the networks below. 
  </p>
 </div>
 </div>
@@ -51,7 +51,7 @@
 <div class="row">
 	<div class="col">
 <p class="lead">  
-	The two versions of the network are based on the same data. There a some minor differences in the layout and then the network to the right only has labels on the main characters. This is just, so the structure of the network is more obvious than then one to the left. But I think it's quite funny to see the relations to the different characters that has appeared in the series over time. <br> <br>
+	The two versions of the network are based on the same data, the only difference is that the right one is only displaying labels for the main characters. This is just, so the structure of the network is more obvious than then one to the left. But I think it's quite funny to see the relations to the different characters that has appeared in the series over time. <br> <br>
 	As you might have noticed the node sizes are different. This is because they are proportional to their degree. Degree is the number of edges adjacent to a node. So it might not surprise you that the main characters have the biggest nodes.
 
  </p>
@@ -68,12 +68,14 @@
 
 <!-- Degree distribution -->
 
+ <h1 class="display-4 h1">Degree Distribution</h2> 
 <div class="row">
 
   <div class="col-sm-4"><img src="images/degreedist.png" width=100%></div>
+
   <div class="col-sm-8">
-    <h1 class="display-4 h1">Degree Distribution</h2> <br>
-  	<p class="lead"> The plot on the left shows the degree distribution for the network. As it displays a lot of the nodes have degrees of 50 or less, while 6 nodes have more than 150. Without investigating further it's pretty safe to say that these 6 nodes are our 6 main characters. When the distribution looks like this, it's a reflection of a network with hubs in it - meaning few nodes are "center" for other nodes. </p>
+    
+  	<p class="lead"> The plot on the left shows the degree distribution for the network. A degree distribution is calculated by the degree of each node in the network and then counting how many of each amount of degrees that exist. As it displays a lot of the nodes have degrees of 50 or less, while 6 nodes have more than 150. Without investigating further it's pretty safe to say that these 6 nodes are our 6 main characters. When the distribution looks like it's following a powerlaw, it's a reflection of a scale free network with hubs in it - meaning few nodes are "center" for other nodes. This is pretty cool as this property is also what we see in a lot of real networks.</p>
   </div>
 </div>
 
